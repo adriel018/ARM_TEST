@@ -1,0 +1,43 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    aoliveira:
+      company: Syngular Solutions
+      email: aoliveira@syngularsolutions.com
+      expiration_date: '2024-06-30'
+      failed_login_attempts: 0
+      license: Valid
+      logged_in: false
+      name: Adriel Oliveira
+      password: $2b$12$s/W70VfqP/GQhD/fgKn.7.dL4MRSynZEteq3t2nNJwgSLejc.wuWK
+      user_privilege: Client
+    bruno:
+      company: Syngular Solutions
+      email: bsantos@syngularsolutions.com
+      expiration_date: '2024-12-30'
+      failed_login_attempts: 0
+      license: Valid
+      logged_in: false
+      name: Bruno Batista
+      password: $2b$12$Cn7FTeeyNHlI5as/6Hb7ZOKgKd6fx6ULHFTJTT0pbnbLU9BQbn8l6
+      user_privilege: Administrator
+    mandrade:
+      company: Syngular
+      email: mandrade@syngularsolutions.com
+      expiration_date: '2024-06-19'
+      license: Valid
+      name: Micaellen
+      password: abc
+      user_privilege: Client
+    rbriggs:
+      email: rbriggs@gmail.com
+      failed_login_attempts: 0
+      logged_in: false
+      name: Rebecca Briggs
+      password: $2b$12$zQCYT2onNjK3vO32eqgHY.oXkIa4baPGv7mv.S0ehgMgTHV2pn8Ky
+pre-authorized:
+  emails:
+  - melsby@gmail.com

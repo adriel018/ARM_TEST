@@ -1,0 +1,1755 @@
+Well_characteristics:
+
+  well_type:
+    Infill:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+      action_m_score: 0
+      action_s_score: 0
+    Decommissioning Well:
+      score: 10
+      actions_m:
+        - Follow the instructions of norm 699/216 and resolution 817 of ANP and prepare a checklist for them.
+      actions_s: [ ]
+      action_m_score: 0
+      action_s_score: 1.5
+
+    Geothermal:
+      score: 10
+      actions_m: []
+      actions_s: [ ]
+      action_m_score: 0
+      action_s_score: 1.5
+
+    Development:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+      - Prepare Well Control emergency response plan.
+      action_m_score: 0
+      action_s_score: 1.5
+    Wildcat:
+      score: 10
+      actions_m:
+      - Prepare well control emergency response plan
+      actions_s: [ ]
+      action_m_score: 0.4
+      action_s_score: 0
+    Exploratory:
+      score: 10
+      actions_m:
+      - Prepare well control emergency response plan'
+      actions_s: [ ]
+      action_m_score: 0.4
+      action_s_score: 0
+    Interception well:
+      score: 10
+      actions_m:
+      - Prepare well control emergency response plan.'
+      actions_s: [ ]
+      action_m_score: 0.4
+      action_s_score: 0
+    Miner well:
+      score: 5
+      actions_m:
+      - Prepare Well Control Emergency Response Plan.
+      actions_s: [ ]
+      action_m_score: 0.4
+      action_s_score: 0
+    Intervention:
+      score: 9
+      actions_m:
+      - Prepare Well Control Emergency Response plan.'
+      actions_s: [ ]
+      action_m_score: 0.4
+      action_s_score: 0
+    Relief Well:
+      score: 10
+      actions_m:
+      - Prepare well control emergency response plan'.
+      actions_s: [ ]
+      action_m_score: 0.4
+      action_s_score: 0
+    total_actions: 7
+
+  open_flow_potential:
+    <=4000:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+    <=10000:
+      score: 1
+      actions_m: [ ]
+      actions_s: [ ]
+    <=17000:
+      score: 2
+      actions_m: [ ]
+      actions_s: [ ]
+    <=26000:
+      score: 3
+      actions_m: [ ]
+      actions_s: [ ]
+    <=33000:
+      score: 4
+      actions_m: [ ]
+      actions_s: [ ]
+    <=40000:
+      score: 5
+      actions_m: [ ]
+      actions_s: [ ]
+    <=47000:
+      score: 6
+      actions_m: [ ]
+      actions_s: [ ]
+    <=54000:
+      score: 7
+      actions_m: [ ]
+      actions_s: [ ]
+    <=62000:
+      score: 8
+      actions_m: [ ]
+      actions_s: [ ]
+    <=69000:
+      score: 9
+      actions_m: [ ]
+      actions_s: [ ]
+    outro:
+      score: 10
+      actions_m: [ ]
+      actions_s: [ ]
+
+  water_depth:
+    <=15:
+      score: 0
+      actions_m: ['Perform shallow hazard analisys and verify the possibility of cratering formation near the plataform', 'Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)' ]
+      actions_s: [ ]
+    <=348:
+      score: 1
+      actions_m: [ 'Perform shallow hazard analisys and verify the possibility of cratering formation near the plataform', 'Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)' ]
+      actions_s: [ ]
+    <=703:
+      score: 2
+      actions_m: [ 'Perform shallow hazard analisys and verify the possibility of cratering formation near the plataform', 'Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)' ]
+      actions_s: [ ]
+    <=1086:
+      score: 3
+      actions_m: ['Perform shallow hazard analisys and verify the possibility of cratering formation near the plataform', 'Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)']
+      actions_s: [ ]
+    <=1505:
+      score: 4
+      actions_m: ['Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)', 'Perform shallow hazard analysis']
+      actions_s: [ ]
+    <=1972:
+      score: 5
+      actions_m: ['Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)', 'Perform shallow hazard analysis']
+      actions_s: ['Consider the use of hydrate-inhibitive on drilling and completions fluids']
+    <=2510:
+      score: 6
+      actions_m: ['Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)', 'Perform shallow hazard analysis']
+      actions_s: ['Consider the use of hydrate-inhibitive on drilling and completions fluids']
+    <=3165:
+      score: 7
+      actions_m: ['Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)', 'Perform shallow hazard analysis']
+      actions_s: ['Consider the use of hydrate-inhibitive on drilling and completions fluids']
+    <=4084:
+      score: 8
+      actions_m: ['Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)', 'Perform shallow hazard analysis']
+      actions_s: ['Consider the use of hydrate-inhibitive on drilling and completions fluids']
+    <=4921:
+      score: 9
+      actions_m: ['Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)', 'Perform shallow hazard analysis' ]
+      actions_s: ['Consider the use of hydrate-inhibitive on drilling and completions fluids']
+    outro:
+      score: 10
+      actions_m: ['Prepare barrier plan to prevent formation fluid from reaching the seafloor or surface (Geological fault, etc.)', 'Consider the use of hydrate-inhibitive on drilling and completions fluids', 'Perform shallow hazard analysis']
+      actions_s: [ ]
+
+  Rig_type:
+    Onshore:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+    Jack Up:
+      score: 1
+      actions_m: [ ]
+      actions_s: [ ]
+    Fixed:
+      score: 2
+      actions_m: [ ]
+      actions_s: [ ]
+    TLP,Spar or Compliant Tower:
+      score: 4
+      actions_m: [ ]
+      actions_s: [ ]
+    Floater Anchored:
+      score: 7
+      actions_m: [ ]
+      actions_s: [ ]
+    Floater DP:
+      score: 10
+      actions_m: [ ]
+      actions_s: [ ]
+
+  Rig_status:
+    Defined:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+    Defined with limitation:
+      score: 5
+      actions_m:
+        - Prepare checklist for all rig systems
+        - Establish a robust inspection schedule for the equipment integrity engineer
+      actions_s:
+        - Link rig performance to the project contract
+    Not defined:
+      score: 10
+      actions_m:
+        - Prepare a complete inspection report for rig acceptance in the scenario it will operate in
+      actions_s: [ ]
+
+  Correlation_wells:
+    Select:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Above 2 correlation wells:
+      score: 0
+      actions_m: [ ]
+      actions_s: ['Use two independent models of geopressures estimation, considering the worst scenarios.', 'Use PWD, GR, Resistivity and Sonic in BHA.', 'Use a formation pore pressure measurement tool in the BHA.']
+      action_m_score: 0
+      action_s_score: 1.5
+    1 or 2 correlation wells:
+      score: 5
+      actions_m: [ ]
+      actions_s: ['Use two independent models of geopressures estimation, considering the worst scenarios.', 'Use PWD, GR, Resistivity and Sonic in BHA.', 'Use a formation pore pressure measurement tool in the BHA|.']
+      action_m_score: 0
+      action_s_score: 1.5
+    No correlation wells:
+      score: 10
+      actions_m: ['Use two independent models of geopressures estimation, considering the worst scenarios.', 'Seismic (velocity interval) for geopressure analysis with depth interval less than 10m', 'Use PWD, GR, Resistivity and Sonic in BHA.', 'Use a formation pore pressure measurement tool in the BHA.']
+      actions_s: [ ]
+      action_m_score: 0.1
+      action_s_score: 0
+    total_actions: 10
+
+  Data_quality:
+    Good Quality and Good Confiability:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+      action_m_score: 0
+      action_s_score: 0
+    Good Quality and Poor Confiability:
+      score: 5
+      actions_m: [ ]
+      actions_s: ['Seismic (velocity interval) for geopressure analysis with depth interval less than 10m', 'Use a formation pore pressure measurement tool in the BHA.']
+      action_m_score: 0
+      action_s_score: 1.5
+    Poor Quality and Good Confiability:
+      score: 5
+      actions_m: [ ]
+      actions_s: [ 'Seismic (velocity interval) for geopressure analysis with depth interval less than 10m', 'Use a formation pore pressure measurement tool in the BHA.']
+      action_m_score: 0
+      action_s_score: 1.5
+    Poor Quality and Poor Confiability:
+      score: 10
+      actions_m: ['Seismic (velocity interval) for geopressure analysis with depth interval less than 10m', 'Use a formation pore pressure measurement tool in the BHA.']
+      actions_s: [ ]
+      action_m_score: 0.2
+      action_s_score: 0
+    total_actions: 6
+
+  Learning_curve:
+    Good Learning Curve:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+      action_m_score: 0
+      action_s_score: 0
+    Poor Learning Curve:
+      score: 5
+      actions_m:
+        - Evaluate implement data base
+        - Prepare a Technical Summary for each well in the Area
+        - Provide area studies
+        - Hold a Lessons Learned meeting after the project
+        - Create and follow a systematic project flow
+      actions_s: [ ]
+      action_m_score: 0.4
+      action_s_score: 0
+    No Learning Curve:
+      score: 10
+      actions_m:
+      - Evaluate implement data base
+      - Assign qualified personnel to introduce a learning curve methodology
+      - Prepare a technical summary for each well in the area
+      - Provide area studies
+      - Hold a Lessons Learned meeting after the project
+      - Create and follow a systematic project flow
+      actions_s: [ ]
+      action_m_score: 0.2
+      action_s_score: 0
+    total_actions: 3
+
+  General_actions:
+    actions:
+      - Conduct pre-project meeting with teams with proven experience in area where the well will be drilled
+
+Geology:
+  Shallow Hazard Risk:
+    None:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+    Shallow Water Flow:
+      score: 5
+      actions_m:
+        - Analyse the possibility to drill a pilot well
+        - Evaluate the alternative to drill the shallow hazard with pump and dump (riserless) and isolating shallow hazard zones with the surface casing;
+        - Elaborate cement job to prevent flow while cement is setting;
+        - Verify table A-2 on API 65
+        - Consider the use of resistivity log at the bit to indicate the presence of shallow gas/water zone
+        - Consider running a casing string above the shallow hazard, drill it with riser and isolate the zone with a liner
+      actions_s:
+        - Elaborate decision tree for shallow hazards case
+        - Analyse to move the well to a new location
+    Hydrate:
+      score: 7
+      actions_m:
+        - Analyse the possibility to move the well to a new location|;
+        - Analyse the possibility to drill a pilot well|;
+        - Evaluate the alternative to drill the shallow hazard with pump and dump (riserless) and isolating shallow hazard zones with the surface casing;
+        - Elaborate cement job to prevent flow while cement is setting;
+        - Verify table A-2 on API 65;
+        - Generate hydrate envelope to mitigate associate problems;
+        - Verify possibilily of hydrate on safety equipament|;
+        - Verify wellbore stability due to disassociation of hydrate filled formations caused by mud weight temperature;
+        - Verify the effect of free gas entering in the well due to disassociation of hydrate filled formations (Ex:effects on the mud, solids, cementing, BOP and C/V valves);
+      actions_s:
+        - Consider running a casing string above the shallow hazard, drill it with riser and isolate the zone with a liner;
+
+    Shallow Gas:
+      score: 10
+      actions_m:
+        - Elaborate decision tree for shallow hazards case';
+        - Analyse to move the well to a new location Analyse the possibility to drill a pilot well';
+        - Evaluate the alternative to drill the shallow hazard with pump and dump (riserless) and isolating shallow hazard zones with the surface casing';
+        - Elaborate cement job to prevent flow while cement is setting';
+        - Verify table A-2 on API 65';
+        - Consider the use of resistivity log at the bit to indicate the presence of shallow gas/water zone';
+        - Consider running a casing string above the shallow hazard, drill it with riser and isolate the zone with a liner'.
+      actions_s: []
+
+  H2S Content:
+    actions:
+      - Consider the presence of H2S in the selection of materials and equipments. Also follow ISO 15156-1 and company standard'.
+      - Consider the presence of H2S in drilling fluid'
+      - Certify that the rig unit is equiped to meet the operational needs in H2S environment. To determine the H25 content, follow company standars and use GGT (Garret Gas Train) kit'.
+    actions10:
+      - Consider the presence of H2S in the selection of materials and equipments. Also follow ISO 15156-1 and company standard.
+      - Consider the presence of H2S in drilling fluid
+      - Certify that the rig unit is equiped to meet the operational needs in H2S environment. To determine the H25 content, follow company standars and use GGT (Garret Gas Train) kit.
+      - Analyse periodically drill string and rig equipament conditions
+      - Consider the presence of H2S in the cement slurry formulation and the casing design (Chromium 13).
+      - Consider the presence of H2S in the formulation of the drilling fluid.
+
+  CO2 Content:
+    actions:
+      - Consider the presence of CO2 in the selection of materials and equipments';
+      - Install a CO2 detector in the flow line and follow procedures according to API RP 13B-1 and API RP 13B-2 using the Garret Gas Train (GGT) kit'.
+      - Consider the presence of H2S in the cement slurry formulation and the casing design (Chromium 13).'
+      - Consider the presence of H2S in the formulation of the drilling fluid.'
+
+  Wellhead Pressure:
+    actions_m:
+      - Follow-up geopressure in real-time if the expected maximum wellhead pressure reaches 85% of the BOP pressure.
+    actions_s:
+      - Consider the use probabilist casing design according to the company standard
+
+  Mud Wight Window:
+    min:
+      actions_m:
+        - Consider reducing mud weight and mud filtrate'
+      actions_s: []
+    near:
+      actions_m:
+        - Consider reducing mud weight and mud filtrate
+      actions_s:
+        - Perform surge/swab study to select the best velocity to run casing and to trip BHA
+        - Perform ECD analyze to keep it within the operational mud weight window
+        - Analyze using PWD to keep annular pressure within the operational mud weight window.
+    med:
+      actions_m:
+        - Perform surge/swab study to select the best velocity to run casing and to trip BHA|.
+        - Perform ECD analyze to keep it within the operational mud weight window|.
+        - Use PWD to keep the annular pressure within the operational mud weight window|.
+      actions_s:
+        - Use PWD to keep annular pressure within the operational mud-weight window.
+        - Consider using MPD to prevent kick and lost circulation|.
+        - Take into account drilling parameters (ROP, torque, drag, etc.) to improve geopressures estimate|.
+        - Elaborate one or more independent geopressure studies in addition to the company's one (minimum of 2 studies in total). Consider the worst case.
+        - Follow-up geopressure in real-time and analyze the necessity to take photos of the cuttings samples to be sent to the office|.
+        - Elaborate decision tree to control lost circulation|.
+        - Consider having an experienced geopressure specialist at the rig site'.
+    max:
+      actions_m:
+        - Perform surge/swab study to select the best velocity to run casing and to trip BHA'
+        - Perform ECD analyse to keep it within the operational mud weight window'
+        - Use PWD to keep annular pressure within the operational mud weight window'
+        - Take into account drilling parameters (ROP, torque, drag, etc.) to improve geopressures estimate'
+        - Follow-up geopressure in real-time and analyze the necessity to take photos of the cuttings samples to be sent to the office'
+        - Elaborate decision tree to control lost circulation'
+
+      actions_s:
+        - Elaborate one or more independent geopressure studies in addition to the company's one (minimum of 2 studies in total). Consider the worst case'
+        - Consider the use of pump and dump to extend the shallow phase'
+        - Consider having an experienced geopressure specialist at the rig site'
+        - Consider using MPD to prevent kick and lost circulation'
+
+  Hole Temperature:
+    max:
+      actions_m:
+        - Use procedure to identify kick and false kick (breathing formation, ballooning, etc.)|
+        - Verify compatibility of tools, equipments, fluids inside tools/equipments (Ex. fuid inside DHSV) and seals (Ex. BOP) with temperature|
+        - Use circulating sub to minimize the effect of temperature during connection|
+        - Consider circulating fluid to reduce the fluid temperature during tripping operations|
+        - Consider the use of mud cooler|
+        - Consider the use of expansible liner/casing|
+        - Consider temperature and pressure effect in mud weight, geopressure calculation and casing shoe setting depth|
+        - Consider temperature and pressure effect in casing design and wellhead selection|
+        - Use PWD to verify the bottomhole pressure and LWD/MWD to verify bottomhole temperature|
+        - Consider temperature effect on cement job|
+        - Evaluate barite sag effect on drilling fluid|
+        - Perform analysis of axial loads considering annular pressure build-up to select casings strings, conexions and wellhead system.|
+        - Consider annular pressure build-up on casing and tubing design|
+
+      actions_s: [ ]
+    med:
+      actions_m:
+        - Consider temperature and pressure effect in casing design and wellhead selection'
+        - Perform analysis of axial loads considering annular pressure build-up to select casings strings, conexions and wellhead system.'
+        - Consider annular pressure build-up on casing and tubing design
+
+      actions_s:
+        - Use procedure to identify kick and false kick (breathing formation, ballooning, etc.)'.
+        - Verify compatibility of tools, equipments, fluids inside tools/equipments (Ex. fuid inside DHSV) and seals (Ex. BOP) with temperature
+        - Use circulating sub to minimize the effect of temperature during connection
+        - Consider circulating fluid to reduce the fluid temperature during tripping operations
+        - Consider the use of mud cooler
+        - Consider the use of expansible liner/casing
+        - Consider temperature and pressure effect in mud weight, geopressure calculation and casing shoe setting depth
+        - Use PWD to verify the bottomhole pressure and LWD/MWD to verify bottomhole temperature
+        - Consider temperature effect on cement job
+        - Evaluate barite sag effect on drilling fluid
+    near:
+      actions_m:
+        - Consider temperature and pressure effect in casing design and wel head selection
+        - Perform analysis of axial loads considering annular pressure build-up to select casings strings, conexions and wellhead system'.
+        - Consider annular pressure build-up on casing and tubing design.
+
+      actions_s: []
+    min:
+      actions_m: []
+
+      actions_s:
+        - Perform analysis of axial loads considering annular pressure build-up to select casings strings, conexions and wellhead system.
+        - Consider annular pressure build-up on casing and tubing design'
+
+  Tectonic:
+    actions:
+      - Take into account tectonics effects on pore pressure
+      - Prepare preliminary geomechanical tests to determine the stress state caused by tectonic effects.
+      - Conduct in situ measurements.
+      - Perform micro-fracturing with image profiling and carry out oriented coring.
+
+  Formation Subsidence:
+    actions: [ ]
+
+  Salt Formation:
+    None:
+      score: 0
+      actions_m: []
+      actions_s: []        # Consider the issues related to rubble zone
+
+    Immovable Salt:
+      score: 6
+      actions_m:
+        - Drill salt zones with oil base and saturated fluid to prevent salt dissolution
+      actions_s:
+        - Consider possibility of tar zones'
+        - Consider the issues related to rubble zone|.
+
+    Movable Salt:
+      score: 9
+      actions_m:
+        - Consider the issues related to rubble zone|
+        - Consider increasing mud weight.|
+        - Use salt mobility curve to determine the decrease in wellbore diameter vs time and the need to enlarge instable zones|
+        - Consider effect of salt tectonics on the pore pressure, in situ stresses and casing design.|
+        - Drill salt zones with oil base and saturated fluid to prevent salt dissolution.|
+        - Plan well trajectory minimizing doglegs in salt zones to avoid non uniform loading.|
+        - Design rapidly activated cement slurry with high compressive strength.|
+        - Define optimum interval for casing centralizers to improve cement job.|
+        - Consider adding extra phases beyond the minimum number of planned phases for this well.|
+      actions_s:
+        - Consider possibility of tar zones.
+
+    Allochthonous:
+      score: 10
+      actions_m:
+        - Consider the issues related to rubble zones
+        - Consider increasing mud weight.'
+        - Use salt mobility curve to determine the decrease in wellbore diameter vs time and the need to enlarge instable zones'
+        - Consider effect of salt tectonics on the pore pressure, in situ stresses and casing design.'
+        - Drill salt zones with oil base and saturated fluid to prevent salt dissolution.'
+        - Plan well trajectory minimizing doglegs in salt zones to avoid non uniform loading.'
+        - Design rapidly activated cement slurry with high compressive strength.'
+        - Define optimum interval for casing centralizers to improve cement job.|'
+        - Consider adding extra phases beyond the minimum number of planned phases for this well.'
+      actions_s:
+        - Consider possibility of tar zones|
+
+    Autochthonous:
+      score: 10
+      actions_m: [ ]
+      actions_s: [ ]
+
+  Formations Pressures:
+
+    Normal Pressure (8,5 to 9 ppg):
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Abnormal Low Pressure (6 to 8,5 ppg):
+      score: 1
+      actions_m: []
+      actions_s:
+        - Take to account stuck pipe due to differential pressure'
+        - Plan drilling fluid to reduce formation damage'
+
+    Depletion (< 6ppg):
+      score: 2
+      actions_m:
+        - Use procedure to identify kick and false kick (breathing formation, ballooning, etc.)
+        - Take to account stuck pipe due to differential pressure
+        - Plan drilling fluid to reduce formation damage
+
+      actions_s:
+        - Record volumes of fluid lost to formation and to surface to detect the occurrence of a false kick
+
+    Over Pressure (9,1 to 90% Overburden):
+      score: 3
+      actions_m:
+        - Record volumes of fluid lost to formation and to surface to detect the occurrence of a false kick|
+        - Use procedure to identify kick and false kick (breathing formation, ballooning, etc.)'
+        - Verify all pore pressure mechanism|
+
+      actions_s:
+        - Verify compatibility of tools, equipments with pressure|
+        - Plan relief well taking account high overpressure and select capping stack|
+        - Follow-up geopressure in real-time and analyze the necessity to take photos of the cuttings samples to be sent to the office.|
+        - Consider having an experienced geopressure specialist at the rig site.|
+        - Take into account kick tolerance to establish casing shoe setting depths.|
+        - Elaborate a decision tree to control lost circulation.
+
+    High Overpressure (above 90% Overburden):
+      score: 4
+      actions_m:
+        - Record volumes of fluid lost to formation and to surface to detect the occurence of a false kick
+        - Use procedure to identify kick and false kick (breathing formation, ballooning, etc.).
+        - Verify all pore pressure mechanism
+        - Verify compatibility of tools, equipments with pressure
+        - Plan relief well taking account high overpressure and select capping stack
+        - Follow-up geopressure in real-time and analyze the necessity to take photos of the cuttings samples to be sent to the office.
+        - Consider having an experienced geopressure specialist at the rig site.
+        - Take into account kick tolerance to establish casing shoe setting depths.
+        - Elaborate decision tree to control lost circulation.
+
+      actions_s: []
+
+  Formation to Drill:
+    Weak:
+      score: 0.6
+      actions_m:
+        - Consider use PWD, synthetic fluid or inhibited fluid to avoid packoff formation.
+        - Perform hydraulic analysis considering low flow rate.
+        - Perform vibration study to avoid formation wash-out.
+
+      actions_s: []
+    Fractured:
+      score: 1.4
+      actions_m:
+        - Analyze the history of loss circulation in the field.
+        - Consider use PWD, synthetic fluid or inhibit fluid to avoid packoff formation.
+        - Perform hydraulic analysis considering low flow rate.|
+        - Perform vibration study to avoid formation wash-out.|
+      actions_s: [ ]
+
+    Reactive:
+      score: 1.4
+      actions_m:
+        - Check well condition, mainly in build-up/drop of intervals, before running casing.
+        - Consider increase mud weight or run extra casing.
+        - Consider the use of the synthetic base fluid.
+      actions_s: [ ]
+
+    Abrasive:
+      score: 3.3
+      actions_m:
+        - Consider the use of drill pipe protector.
+        - Evaluate the best bit option to minimize the number of tripping and improve ROP.
+        - Plan enlargement operations taking into account hard and abrasive formations.
+        - Take into account formation abrasive to design relief well.
+      actions_s: [ ]
+
+    Hard:
+      score: 3.3
+      actions_m:
+        - Evaluate the best bit option to minimize the number of tripping and improve ROP.|
+        - Evaluate the use of turbine/motor.|
+        - Evaluate to reduce mud weight.|
+        - Plan enlargement operations taking into account hard and abrasive formations.|
+        - Take into account formation hard to design relief well.|
+      actions_s:
+        - Analyze the use of air, foam or aerated fluid drilling.
+
+  Stress State:
+    Magnitude :
+      score: 5
+      actions_m: []
+      actions_s:
+        - Performa at least two tests to determine stress orientation (core orientation with micro-frac, breakout analysis, micro-frac with image log, ASR, etc.
+    None:
+      score: 10
+      actions_m:
+        - Carry out Leak Off Test to evaluate the magnitude of minimum horizontal stress.
+      actions_s:
+        - Performa at least two tests to determine stress orientation (core orientation with micro-frac, breakout analysis, micro-frac with image log, ASR, etc.|
+
+  Formation Fluid:
+    Select:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Injection Well:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Brine:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Oil:
+      score: 0
+      actions_m:
+        - Prepare a plan to combat an oil kick
+        - Plan capping operation taking into account possible underground blowout or cross flow'
+      actions_s: []
+    Condensate:
+      score: 7
+      actions_m:
+        - Perform hydraulic analysis to define rig equipments to drill the relief wells and number of relief wells.
+        - Plan capping operation taking into account possible underground blowout or cross flow
+        - Prepare a plan to combat a mixture of oil and gas kick.
+      actions_s:
+        - Perform casing and tubing design considering full evacuation
+    Gas:
+      score: 10
+      actions_m:
+        - Prepare a plan to combat a gas kick!
+        - Perform hydraulic analysis to define rig equipments to drill the relief wells and number of relief wells.!
+        - Plan capping operation taking into account possible underground blowout or cross flow!
+        - Perform casing and tubing design considering full evacuation!
+      actions_s: []
+
+Drilling:
+  Total Depth:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    med:
+      score: 7
+      actions_m: [ ]
+      actions_s:
+        - Consider adding two extra contingency phases beyond the minimum number of phases for this well.
+
+
+    max:
+      score: 10
+      actions_m:
+        - Consider adding two extra contingency phases beyond the minimum number of phases for this well.'
+      actions_s: [ ]
+
+  Well Alignment:
+    Maximum Stress:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Minimum Stress:
+      score: 4
+      actions_m: [ ]
+      actions_s:
+        - Perform a wellbore stability study to optimize well design including well trajectory.
+
+    Intermediate:
+      score: 7
+      actions_m:
+        - Perform a wellbore stability study to optimize well design including well trajectory.'
+      actions_s: [ ]
+
+    Unknown:
+      score: 10
+      actions_m:
+        - Perform a wellbore stability study to optimize well design including well trajectory'.
+        - Monitor cuttings shape in real time to follow up well stability
+
+      actions_s: [ ]
+
+  Phase Number:
+    3 phases:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    4 phases:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    5 phases:
+      score: 1
+      actions_m: [ ]
+      actions_s:
+        - Design cemeting operation to minimize lost circulation
+
+    6 phases:
+      score: 5
+      actions_m:
+        - Design cemeting operation to minimize lost circulation'
+      actions_s:
+        - Perform hidraulic analysis to keep ECD within the operational mud weight window
+        - Use PWD to keep annular pressure within the operational mud weight window
+
+    7 or Above:
+      score: 10
+      actions_m:
+        - Refer to tables B1, B2 and B3 on API 96 for additional mitigation action related to cementing jobs.
+        - Design cementing operation to minimize APB effect.
+        - Design cementing operation to minimize gas migration.
+        - Perform surge and swab studies to avoid loss circulation or kick.
+        - Perform hydraulic analysis to keep ECD within the operational mud weight window.
+        - Use PWD to keep annular pressure within the operational mud weight window.
+
+      actions_s: [ ]
+
+  Hole Enlargements:
+    None:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    One:
+      score: 2
+      actions_m: [ ]
+      actions_s:
+        - Plan enlargement operations taking into acount hard and abrasive formations
+
+    Two:
+      score: 4
+      actions_m: [ ]
+      actions_s:
+        - Plan enlargement operations taking into acount hard and abrasive formations.
+
+    3 or more:
+      score: 7
+      actions_m:
+        - Analyze the use of expandable casing to extend a phase and to reach the target with a larger diameter
+        - Consider the use of bicentral or expandable bit
+
+      actions_s:
+        - Plan enlargement operations taking into acount hard and abrasive formations'
+
+    Rock or abrasive formation:
+      score: 10
+      actions_m:
+        - Plan enlargement operations taking into acount hard and abrasive formations'.
+        - Analyze the use of expandable casing to extend a phase and to reach the target with a larger diameter.
+        - Consider the use of bicentral or expandable bit.
+        - Prepare a casing wear study to mitigate casing failure.
+      actions_s: [ ]
+
+  Slim Hole:
+    Slim hole not planned:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Slim hole as contingency:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Plan kick control strategy taking into account slim hole scenario
+        - Optimize hydraulic to prevent formation erosion
+        - Elaborate mud program considering slim hole scenario
+        - Select drill-string according to slim hole scenario
+
+    Slim hole planned:
+      score: 10
+      actions_m:
+        - Plan kick control strategy taking into account slim hole scenario.
+        - Optimize hydraulic to prevent formation erosion.
+        - Elaborate mud program considering slim hole scenario.
+        - Select drill-string according to slim hole scenario.
+      actions_s: [ ]
+
+  Type of Aquifer:
+    None:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Shallow salt water:
+      score: 1
+      actions_m:
+        - Follow aquifer regulations/best practices in the country of the well
+        - Verify isolation between aquifer and reservoir
+        - Take into account the aquifer to plan cement job
+        - Plan mud weight to drill aquifer locate in salt interval
+
+      actions_s: [ ]
+
+    Deep salt water:
+      score: 2
+      actions_m:
+        - Follow aquifer regulations/best practices in the country of the well'
+        - Take into account the aquifer to plan cement job'
+        - Plan mud weight to drill aquifer locate in salt interval'
+      actions_s: [ ]
+
+    Deep fresh water:
+      score: 5
+      actions_m:
+        - Follow aquifer regulations/best practices in the country of the well'.
+        - Take into account the aquifer to plan cement job'.
+        - Analyse the risk of aquifer contamination and if necessary garante their complete isolation
+      actions_s: [ ]
+
+    Shallow fresh water:
+      score: 10
+      actions_m:
+        - Follow aquifer regulations/best practices in the country of the well
+        - Take into account the aquifer to plan cement job
+        - Analyse the risk of aquifer contamination and if necessary garante their complete isolation
+        - Plan a casing fully cemented to the surface in front of the aquifer or according to the country's regulations
+
+      actions_s: [ ]
+
+  Cement Interval:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    med:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    max:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+  Casing Type:
+    Conventional Casing:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Liner:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Use tie-back receptacle of a minimum 20 ft length
+        - Prepare a casing wear study to mitigate casing failure
+        - Plan the operation to install the linear to ensure sealing on the top
+        - Dimension the casing prior to the liner based on the existence of the liner
+
+    Tieback:
+      score: 10
+      actions_m: [ ]
+      actions_s:
+        - Use tie-back receptacle of a minimum 20 ft lenght.
+
+    Expandable:
+      score: 10
+      actions_m:
+        - Check if the expandable casing design meets the well's project conditions.
+      actions_s: [ ]
+
+    Casing Drilling:
+      score: 10
+      actions_m:
+        - Hire a casing drilling specialist.
+        - Analyze the trajectory's compatibility with casing drilling.
+      actions_s: [ ]
+
+  Slant Maximum Inclination:
+    min:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Consider adding extra phases beyond the minimimum number of planned phases for this well
+        - Perform a wellbore stability study to optimize well design including well trajectory
+    med:
+      score: 9
+      actions_m:
+        - Prepare hydraulic study taking into account drillstring rotation
+        - Prepare cement program taking into account casing rotation
+
+      actions_s:
+        - Consider adding extra phases beyond the minimum number of planned phases for this well.
+        - Perform a wellbore stability study to optimize well design including well trajectory.
+    max:
+      score: 10
+      actions_m:
+        - Prepare hydraulic study taking into account drillstring rotation.
+        - Prepare cement program taking into account casing rotation.
+        - Consider adding extra phases beyond the minimum number of planned phases for this well'.
+        - Perform a wellbore stability study to optimize well design including well trajectory''
+
+      actions_s:
+        - Define optimum interval for casing centralizers to improve cement job.
+
+  Maximum Dogleg:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+    med:
+      score: 7
+      actions_m: [ ]
+      actions_s:
+        - Prepare well trajectory to minimiza the risk of keyseats
+    max:
+      score: 10
+      actions_m:
+        - Prepare well trajectory to minimiza the risk of keyseats.
+      actions_s: [ ]
+
+  Trajectory Planned:
+    None:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+    J Curve:
+      score: 8
+      actions_m:
+        - Prepare well trajectory to minimize the risk of keyseats'
+      actions_s:
+        - Consider using non rotating drilling subs to reduce dril string friction
+    S Curve:
+      score: 10
+      actions_m:
+        - Prepare well trajectory to minimize the risk of keyseats'.
+      actions_s:
+        - Consider using non rotating drilling subs to reduce dril string friction'
+
+  Distance to Well:
+    Above 20 meters:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    10 - 20 meters:
+      score: 4
+      actions_m: [ ]
+      actions_s: [ ]
+
+    5 - 10 meters:
+      score: 8
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Below 5 meters:
+      score: 10
+      actions_m:
+        - Evaluate the use of GWD
+      actions_s: [ ]
+
+  Non-shear Casing:
+    Select:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Yes, no reservoir exposed:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Run casing When the Weather condition is favorable
+        - Plan well control strategy for casing run operations
+
+    Yes, reservoir exposed:
+      score: 10
+      actions_m:
+        - Run casing When the Weather condition is favorable.
+        - Plan well control strategy for casing run operations.
+      actions_s:
+        - Consider probabilistic analysis for casing design
+
+  Drilling Fluid:
+    Select:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Synthetic fluid:
+      score: 2
+      actions_m:
+        - Implement action to improve gas kick detection
+        - Create a plan for cuttings disposal
+
+      actions_s: [ ]
+    Water based (high performance):
+      score: 5
+      actions_m:
+        -  Verify fluid inhibition to shale
+      actions_s: [ ]
+
+    Water based (inhibited):
+      score: 8
+      actions_m:
+        - Verify fluid inhibition to shale.
+      actions_s: [ ]
+
+    Water based:
+      score: 10
+      actions_m:
+        - Verify fluid inhibition to shale'.
+      actions_s: [ ]
+
+    Foamed:
+      score: 10
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Aerated:
+      score: 10
+      actions_m: [ ]
+      actions_s: [ ]
+
+  Maximum fluid density:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s:
+        - Analyze the possibility of kick and wellbore instability due to low mud weight
+
+    med:
+      score: 4
+      actions_m: [ ]
+      actions_s:
+        - Perform hydraulic study considering hole cleaning, ECD x fracture gradient and surge to minimize lost circulation
+    med2:
+      score: 9
+      actions_m: [ ]
+      actions_s:
+        - Perform hydraulic study considering hole cleaning, ECD x fracture gradient and surge to minimize lost circulation.
+        - Use procedure to identify kick and false kick (breathing formation, ballooning, etc)
+        - Verify that rig crew is trained in kick and lost circulation detection and control
+        - Elaborate decision tree to control lost circulation'.
+
+    max:
+      score: 10
+      actions_m:
+        - Perform hydraulic study considering hole cleaning, ECD x fracture gradient and surge to minimize lost circulation'.
+        - Use procedure to identify kick and false kick (breathing formation, ballooning, etc).
+        - Elaborate decision tree to control lost circulation.'
+        - Evaluate the risk of stuck pipe for differential pressure.
+        - Assure that rig crew is trained in kick and lost circulation detection and control.
+
+      actions_s:
+        - Use support of a multidisciplinary specialist team to follow up the operation in real-time basis.
+
+  Reducing pressure zone:
+    actions_m:
+      - Plan to place a casing at the point before the pressure decreases.
+
+  Lost Circulation:
+    No loss:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Partial loss (below 25 bbl/h):
+      score: 3
+      actions_m:
+        - Use PWD to keep annular pressure within operational mud weight window.
+        - Verify that rig crew is trained in kick and lost circulation detection and control.
+
+      actions_s:
+        - Select rig with pressure sensor in the BOP
+        - Consider using MPD to prevent kick and lost circulation
+        - Elaborate Decision Tree to control lost circulation
+
+    Severe loss (above 25 bbl/h):
+      score: 6
+      actions_m:
+        - Use the PWD to keep annular pressure within the operational mud weight window.
+        - Assure that rig crew is trained in kick and lost circulation detection and control
+        - Elaborate Decision Tree to Control Lost Circulation.
+        - Select rig with pressure sensor in the BOP'
+
+      actions_s: [ ]
+
+    Total loss:
+      score: 10
+      actions_m:
+        - Use PBL valve or similar on the drilling string to combat lost circulation.
+        - Select rig with pressure sensor in the BOP.
+        - Use PWD to keep annular pressure within the Operational Mud Weight Window.
+        - Assure that rig crew is trained in kick and lost circulation detection and control'.
+        - Plan logistic mud supply.
+        - Perform hydraulic study considering hole deaning, ECD x fracture gradient and surge to minimize lost circulation.
+        - Perform casing design considering full evacuation.
+        - Evaluate the need of probabilistic analysis for casing design.
+        - Elaborate decision tree to control lost circulation .
+
+      actions_s:
+        - Consider using MPD to prevent kick and lost circulation.
+
+  Riser Safety Margin:
+    Considering:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    None:
+      score: 10
+      actions_m:
+        - Elaborate decision tree to control lost circulation..
+        - Plan the use of extra shear blind in BOP system.
+      actions_s: [ ]
+
+Completion:
+  Inclination:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    med:
+      score: 9
+      actions_m: [ ]
+      actions_s:
+        - Carry out a study of torque and drag for the completion equipment (Packers, sand screens, slotted liners, ICDs, ICVs, etc)
+        - Check the possibility to increase the well diameter and reduce the horizontal length on the well design
+
+    max:
+      score: 10
+      actions_m:
+        - Carry out a study of torque and drag for the completion equipment (Packers, sand screens, slotted liners, ICDs, ICVs, etc)'
+        - Check the possibility to increase the well diameter and reduce the horizontal length on the well design'
+      actions_s: [ ]
+
+  Length:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    med:
+      score: 9
+      actions_m: [ ]
+      actions_s:
+        - Carry out a study of torque and drag for the completion equipment (Packers, sand screens, slotted liners, ICDs, ICVs, etc)'.
+        - Check the possibility to increase the well diameter and reduce the horizontal length on the well design'.
+        - In bullhead pumping, carry out mathematical simulations to check the simulation coverage along the hole interval'.
+
+    max:
+      score: 10
+      actions_m:
+        - Carry out a study of torque and drag for the completion equipment (Packers, sand screens, slotted liners, ICDs, ICVs, etc).
+        - Check the possibility to increase the well diameter and reduce the horizontal length on the well design.
+        - In bullhead pumping, carry out mathematical simulations to check the simulation coverage along the whole interval.
+      actions_s: [ ]
+
+  Production Casing:
+    Cased-cemented-perforated:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+    Non -cemented:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Perform well stability simulations for production flow rate and pressure in case of open hole or barefoot completion
+        - Carry out a study of pressure and permeability contrast along the sandface to plan a kick combat
+        - Check for any aquifer near the zone of interest
+    Barefoot:
+      score: 10
+      actions_m:
+        - Perform well stability simulations for production flow rate and pressure in case of open hole or barefoot completion'
+        - Carry out a study of pressure and permeability contrast along the sandface to plan a kick combat'
+        - Check for any aquifer near the zone of interest'
+
+      actions_s: [ ]
+
+  Multizone completion:
+    Just one zone:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+    Dual zone completion:
+      score: 2
+      actions_m: [ ]
+      actions_s:
+        - Elaborate a complete study of selectivity for simulation and production
+        - Evaluate the use of ICDs or ICVs
+
+    Three zones:
+      score: 5
+      actions_m:
+        - Elaborate a complete study of selectivity for simulation and production'
+        - Evaluate the use of ICDs or ICVs'
+      actions_s:
+        - If there are high contrasto of pressures and permeabilitios, use TCP casing gun
+
+    Above three zones:
+      score: 10
+      actions_m:
+        - Elaborate a complete study of selectivity for simulation and production'.
+        - Evaluate the use of ICDs or ICVs'.
+        - If there are high contrasto of pressures and permeabilitios, use TCP casing gun'
+      actions_s:
+        - Use one-trip systems to perforate the casing and perform selective simulation
+
+    Unknown:
+      score: 10
+      actions_m:
+        - Elaborate a complete study of selectivity for simulation and production.'
+        - Evaluate the use of ICDs or ICVs.'
+        - If there are high contrasto of pressures and permeabilitios, use TCP casing gun'.
+        - Use one-trip systems to perforate the casing and perform selective simulation'
+      actions_s:
+        - Simulate the capacity of cape rocks to act as barries to the vertical growth of hydraulic fractures
+
+  Res. with pressure contrast:
+    None:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Yes (Contrast below 10%):
+      score: 5
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Yes (Contrast above 10%):
+      score: 10
+      actions_m: [ ]
+      actions_s: [ ]
+
+  Hydraulic Fracturing:
+    No fracturing:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Single fracture :
+      score: 5
+      actions_m:
+        - Perform study of the best cost-benefit fracture geometry
+      actions_s: [ ]
+
+    Multi-stage fracturing :
+      score: 10
+      actions_m:
+        - Carry out study for optimization of number and geometry of fractures
+        - Carry out study of matrix acidization and divergence along the well
+      actions_s: [ ]
+
+  Matrix Stimulation:
+    No stimulation:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Single zone:
+      score: 2
+      actions_m:
+        - Perform study of the best cost-benefit fracture geometry'
+      actions_s: [ ]
+
+    Selective multi-zone:
+      score: 5
+      actions_m:
+        - Perform study of the best cost-benefit fracture geometry'.
+      actions_s:
+        - In bullhead pumping, carry out mathematical simulations to check the simulation coverage along the whole interval
+
+    Multi-zone bull-head:
+      score: 10
+      actions_m:
+        - Perform study of the best cost-benefit fracture geometry.'
+        - In bullhead pumping, carry out mathematical simulations to check the simulation coverage along the whole interval.'
+      actions_s: []
+
+  Stand Alone:
+    None:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Stand alone (<2500 ft):
+      score: 3
+      actions_m:
+        - Check the fines content of the sandstone and the flow speed. If there is a high erosion risk, choose gravel-pack.
+      actions_s: [ ]
+
+    Stand alone (2500 to 4000 ft):
+      score: 6
+      actions_m:
+        - Check the fines content of the sandstone and the flow speed. If there is a high erosion risk, choose gravel-pack'.
+      actions_s: [ ]
+
+    Stand alone (above 4000 ft):
+      score: 10
+      actions_m:
+        - Check the fines content of the sandstone and the flow speed. If there is a high erosion risk, choose gravel-pack.'
+      actions_s: [ ]
+
+  Gravel Pack:
+    None:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Gravel Pack (<2500 ft):
+      score: 3
+      actions_m: [ ]
+      actions_s:
+        - Perform a study of pressures in gravel-pack pumping of long horizontal wells. If the operational window is less than 40%, use light proppant.
+
+    Gravel Pack (2500 to 4000 ft):
+      score: 6
+      actions_m:
+        - Perform a gravel-pack pumping mathematical simulation to estimate flow rates and pressures during alpha and beta waves.
+      actions_s:
+        - Perform a study of pressures in gravel-pack pumping of long horizontal wells. If the operational window is less than 40%, use light proppant.'
+
+    Gravel Pack (above 4000 ft):
+      score: 10
+      actions_m:
+        - Perform a gravel-pack pumping mathematical simulation to estimate flow rates and pressures during alpha and beta waves.'
+        - Perform a study of pressures in gravel-pack pumping of long horizontal wells. If the operational window is less than 40%, use light proppant'.
+      actions_s: [ ]
+
+  Frack Pack:
+    None:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Frack Pack (<2500 ft):
+      score: 3
+      actions_m:
+        - Elaborate a casing perforating design suitable for frac-pack (low jet density)
+      actions_s: []
+
+    Frack Pack (2500 to 4000 ft):
+      score: 6
+      actions_m:
+        - Elaborate a casing perforating design suitable for frac-pack (low jet density)'
+      actions_s: [ ]
+
+    Frack Pack (above 4000 ft):
+      score: 10
+      actions_m:
+        - Elaborate a casing perforating design suitable for frac-pack (low jet density)'.
+      actions_s: [ ]
+
+  Type of Artificial Lift:
+    Flowing well:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+    Sucker-rod Pumping:
+      score: 3
+      actions_m: [ ]
+      actions_s: [ ]
+    Gas lift or intermittent gas lift:
+      score: 5
+      actions_m: [ ]
+      actions_s: [ ]
+    ESP:
+      score: 10
+      actions_m:
+        - Check if the inclination and the diameter of well casing are suitable to instal the pump with eletrical cable
+      actions_s: [ ]
+
+  Production flow rate:
+    Gas and/or condensate:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    q < 500 bpd:
+      score: 1
+      actions_m: [ ]
+      actions_s: [ ]
+
+    500 =< q < 1000 bpd:
+      score: 2
+      actions_m: [ ]
+      actions_s: [ ]
+
+    1000 =< q < 10000 bpd:
+      score: 4
+      actions_m: [ ]
+      actions_s: [ ]
+
+    10000 =< q < 40000 bpd:
+      score: 7
+      actions_m: [ ]
+      actions_s: [ ]
+
+    q >= 40000 bpd:
+      score: 10
+      actions_m: [ ]
+      actions_s: [ ]
+
+Logistic:
+  Operational Support:
+    Good support:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Poor support:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Contact the logistics department to check the requirements and deadlines to meet operational needs!.
+        - Schedule fluids and cuttings disposal according to environmental regulations in the area of operations'.
+
+    No support:
+      score: 10
+      actions_m:
+        - Contact the logistics department to check the requirements and deadlines to meet operational needs.
+        - Schedule fluids and cuttings disposal according to environmental regulations in the area of operations.'
+      actions_s: []
+
+  Fluid Disposal:
+    Onshore drilling:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Offshore - water based fluid:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Check the environmental restrictions related to the area or field where the operations will be performed|.
+        - Schedule fluids and cuttings disposal according to environmental regulations in the area of operations|.
+
+    Offshore - synthetic fluid:
+      score: 10
+      actions_m:
+        - Check the environmental restrictions related to the area or field where the operations will be performed.
+        - Schedule fluids and cuttings disposal according to environmental regulations in the area of operations.
+      actions_s: []
+
+  Distance to Operational Base:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    med:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Evaluate the possibility of backing up material from the nearest port.
+        - Evaluate the possibility of building a logistic supporting base.
+
+    max:
+      score: 10
+      actions_m:
+        - Evaluate the possibility of backing up material from the nearest port|.
+        - Evaluate the possibility of building a logistic supporting base|.
+      actions_s: [ ]
+
+  Distance to Warehouse:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    med:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Evaluate the possibility of backing up material from the nearest port'.
+        - Evaluate the possibility of building a logistic supporting base|.
+    max:
+      score: 10
+      actions_m:
+        - Evaluate the possibility of backing up material from the nearest port.'
+        - Evaluate the possibility of building a logistic supporting base.
+
+      actions_s: [ ]
+
+Metocean:
+  Sea Current:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    med:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Consider the use of anchored rig due to minimize current affects|.
+        - Analyze the need to keep a tugboat in standby|.
+        - Plan operations for the initial phases to mitigate sea current affects. Consult wellhead specialist|.
+        - Evaluate the need for riser deflectors|.
+        - Check environmental conditions reports|.
+
+    max:
+      score: 10
+      actions_m:
+        - Consider the use of anchored rig due to minimize current affects.
+        - Analyze the need to keep a tugboat in standby.
+        - Plan operations for the initial phases to mitigate sea current affects. Consult wellhead specialist.
+        - Evaluate the need for riser deflectors.
+        - Check environmental conditions reports.
+      actions_s: [ ]
+
+  Waves Height:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    med:
+      score: 7
+      actions_m: [ ]
+      actions_s:
+        - Consider the use of anchored rig due to minimize current affects.´
+        - Analyze the need to keep a tugboat in standby.´
+        - Plan operations for the initial phases to mitigate sea current affects. Consult wellhead specialist.´
+        - Evaluate the need for riser deflectors.´
+        - Check environmental conditions reports.´
+
+    med2:
+      score: 9
+      actions_m:
+        - Consider the use of anchored rig due to minimize current affects´.
+      actions_s:
+        - Analyze the need to keep a tugboat in standby´.
+        - Plan operations for the initial phases to mitigate sea current affects. Consult wellhead specialist´.
+        - Evaluate the need for riser deflectors´.
+        - Check environmental conditions reports´.
+
+    max:
+      score: 10
+      actions_m:
+        - Consider the use of anchored rig due to minimize current affects.|
+        - Analyze the need to keep a tugboat in standby.|
+        - Plan operations for the initial phases to mitigate sea current affects. Consult wellhead specialist.|
+        - Evaluate the need for riser deflectors.|
+        - Check environmental conditions reports.|
+      actions_s: [ ]
+
+  Wind Speed:
+    min:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    med:
+      score: 5
+      actions_m: [ ]
+      actions_s:
+        - Consider the use of anchored rig due to minimize current affects'.
+        - Analyze the need to keep a tugboat in standby'.
+        - Plan operations for the initial phases to mitigate sea current affects. Consult wellhead specialist'.
+        - Evaluate the need for riser deflectors'.
+        - Check environmental conditions reports'.
+
+    max:
+      score: 10
+      actions_m:
+        - Consider the use of anchored rig due to minimize current affects..
+        - Analyze the need to keep a tugboat in standby..
+        - Plan operations for the initial phases to mitigate sea current affects. Consult wellhead specialist..
+        - Evaluate the need for riser deflectors..
+        - Check environmental conditions reports..
+      actions_s: [ ]
+
+Braskem:
+  Cavity Status:
+    Select:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Pressurized:
+      score: 3.75
+      actions_m:
+        - Establish the kick control method
+        - Implement drills for kick detection
+        - Implement a blowout response plan
+        - Ensure everyone on the rig has well control certification
+        - Anticipate the use of LOT
+
+      actions_s: [ ]
+    Slightly pressurized:
+      score: 6
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Unpressurized:
+      score: 9.5
+      actions_m_flu:
+        - Evaluate the fluid program, considering severe and total circulation losses
+        - Assess the possibility of increasing tank capacity, for example, using auxiliary tanks
+        - Evaluate drilling without returns
+
+      actions_s_flu:
+        - Implement a fluid manufacturing and treatment unit
+
+      actions_m_tec:
+        - Use PBL valve or similar on the drilling string to combat lost circulation.
+
+      actions_s_tec:
+        - Evaluate the use of mud cap drilling
+        - Consider the use of aerated fluid
+
+      actions_m_rc:
+        - Perform surge and swab studies to avoid loss circulation while running casing
+        - Use fiber in the cement slurry
+        - Plan for two-stage cementing
+        - Evaluate the position of the stage collar
+        - Consider the use of lightweight cement slurry
+        - Evaluate the use of ECP and inflatable or mechanical packer
+
+      actions_s_rc: [ ]
+
+      actions_m_pp:
+        - Plan for contingency phases
+        - Conduct an anti-collision study
+        - Evaluate the use of GWD
+
+      actions_s_pp: [ ]
+
+      actions_m_s:
+        - Improve the efficiency of solid control equipment
+        - Use more efficient drilling rigs
+
+      actions_s_s:
+        - Evaluate the use of a slant rig
+
+      actions_m_log:
+        - Review logistics to support mitigation actions for combating circulation losses
+        - Optimize the logistics of the vacuum truck, considering its use (cementing, drilling fluid, gravel disposal, etc.)
+      actions_s_log: [ ]
+
+    Loss zone:
+      score: 9.5
+      actions_m_flu:
+        - Evaluate the fluid program, considering severe and total circulation losses.
+        - Assess the possibility of increasing tank capacity, for example, using auxiliary tanks.
+        - Evaluate drilling without returns.
+
+      actions_s_flu:
+        - Implement a fluid manufacturing and treatment unit.
+
+      actions_m_tec:
+        - Use PBL-type equipment.
+
+      actions_s_tec:
+        - Evaluate the use of mud cap drilling.
+        - Consider the use of aerated fluid.
+
+      actions_m_rc:
+        - Evaluate surge while running casing.
+        - Conduct a swab/surge study.
+        - Use fiber in the cement slurry.
+        - Plan for two-stage cementing.
+        - Evaluate the position of the stage collar.
+        - Consider the use of lightweight cement slurry.
+        - Evaluate the use of ECP and inflatable or mechanical packer.
+
+      actions_s_rc: [ ]
+
+      actions_m_pp:
+        - Plan for contingency phases.
+        - Conduct an anti-collision study.
+        - Evaluate the use of GWD.
+
+      actions_s_pp: [ ]
+
+      actions_m_s:
+        - Improve the efficiency of solid control equipment.
+        - Use more efficient drilling rigs.
+
+      actions_s_s:
+        - Evaluate the use of a slant rig.
+
+      actions_m_log:
+        - Review logistics to support mitigation actions for combating circulation losses.
+        - Optimize the logistics of the vacuum truck, considering its use (cementing, drilling fluid, gravel disposal, etc.).
+      actions_s_log: [ ]
+
+  Well Objective:
+    Select:
+      score: 0
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Backfilling:
+      score: 6
+      actions_m:
+        - Review the well design
+        - Assess the position of the wellhead relative to the target
+        - Evaluate verticality in the final phase
+
+      actions_s: [ ]
+    Piezometer:
+      score: 8
+      actions_m:
+        - Review the well design.
+        - Assess the position of the wellhead relative to the target.
+        - Evaluate verticality in the final phase.
+
+      actions_s: [ ]
+
+    Plugging:
+      score: 8.5
+      actions_m: [ ]
+      actions_s: [ ]
+
+  Location:
+    Inside:
+      score: 9
+      actions_m: [ ]
+      actions_s: [ ]
+
+    Outside:
+      score: 3.5
+      actions_m: [ ]
+      actions_s: [ ]
