@@ -35,10 +35,6 @@ units = {
 with open('ARM_database.yaml') as file:
     db = yaml.load(file, Loader=SafeLoader)
 
-#  Abrindo o arquivo com o banco de dados inputs de problemas do ARM
-with open('teste.yaml') as file:
-    db_input = yaml.load(file, Loader=SafeLoader)
-
 with open('config.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
 
